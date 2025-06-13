@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WhiskerBop Chatbox</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chat-container">
+    
+    <aside class="sidebar">
+      <h2>💾 Saved Chats</h2>
+      <ul id="chat-list"></ul>
+    </aside>
+
+    <main class="chatbox">
+      <h1>ChatBox</h1>
+      <div id="chat-box"></div>
+
+      <form id="chat-form">
+        <input type="text" id="input" placeholder="Type a message..." required />
+        <button type="submit">Send</button>
+        <button id="new-chat" type="button">🧼 New Chat</button>
+        <button id="save-chat" type="button">💾 Save Chat</button>
+      </form>
+    </main>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

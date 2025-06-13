@@ -1,0 +1,137 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: #fffafc;
+  color: #333;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #ff69b4;
+  margin-bottom: 1rem;
+}
+
+#chat-box {
+  background: #fff;
+  border-radius: 20px;
+  padding: 1rem;
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  overflow-y: auto;
+  box-shadow: 0 0 10px rgba(255, 182, 193, 0.3);
+  margin-bottom: 1rem;
+}
+
+.message {
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 15px;
+  max-width: 75%;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+.user {
+  background-color: #cde9ff;
+  align-self: flex-end;
+  text-align: right;
+  margin-left: auto;
+}
+
+.assistant {
+  background-color: #ffe4f0;
+  align-self: flex-start;
+  color: #a64ac9;
+  font-style: italic;
+}
+
+#chat-form {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+#input {
+  flex-grow: 1;
+  padding: 0.75rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+button {
+  padding: 0.75rem 1rem;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff85c1;
+}
+@keyframes floatSparkle {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-20px); opacity: 0; }
+}
+
+.sparkle {
+  display: inline-block;
+  animation: floatSparkle 1s ease-in-out;
+}
+
+pre {
+  background: #f9f9f9;
+  padding: 0.75rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+}
+
+code {
+  font-family: 'Courier New', monospace;
+  white-space: pre-wrap;
+}
+
+.chat-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #ffeef8;
+  border-right: 2px solid #ffb6c1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #ff69b4;
+}
+
+#chat-list {
+  list-style: none;
+  padding: 0;
+}
+
+#chat-list li {
+  padding: 0.5rem;
+  background-color: #fff0f5;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#chat-list li:hover {
+  background-color: #fcd5e5;
+}
