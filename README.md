@@ -14,7 +14,7 @@ Welcome to **WhiskerBop** — your cozy, kindhearted, big-sis-style AI chatbox! 
 
 - **Frontend**: Vanilla JavaScript, HTML5, CSS3
 - **Backend**: Node.js + Express
-- **AI**: OpenAI GPT-3.5-Turbo
+- **AI**: OpenAI GPT-4.1-Nano
 - **Database**: PostgreSQL for chat log storage
 - **Other Tools**:
   - `dotenv` for environment variable management
